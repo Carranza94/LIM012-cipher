@@ -1,0 +1,82 @@
+/*Por recomendación de un youtuber, le puse 0 de margin y de padding para resetear los parámetros que 
+de por sí tiene el navegador. Así yo misma decidiré mis estilos más convenientes */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Empecé por poner un borde a mis etiquetas header, main y footer para saber cóm se ven y cómo se verán 
+conforme avance el estilo. También, le agregé a mi body un border y un tamaño para poder saber cómo está agrupando
+todos mis elementos*/
+body{
+    width: 1000px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 2px;
+    display: block;
+}
+header,footer{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    display: block;
+}
+main{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+
+}
+
+header, footer, main{
+    text-align: center;
+    width: 960px;
+}
+h1{
+    font-family: Verdana;
+    font-size: 50px;
+    background: #2d3436;
+    color: white;
+    margin: 15px;
+    padding: 5px;
+}
+.cifrado{
+    /*border: 0.5px solid blue;*/
+    background: #2d3436;
+    color: white;
+    width: 440px;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+
+}
+.descifrado{
+    /* border: 0.5px solid blue;*/
+     background: #2d3436;
+     color: white;
+     width: 440px;
+     margin: 10px;
+     padding: 5px;
+     float: right;
+ }
+
+
+#string1{
+    border-width: 1px solid gray;
+    margin: 8px;
+    padding: 5px;
+}
+#string2{
+    border-width: 1px solid gray;
+    margin: 8px;
+    padding: 5px,
+}
+#offset1 , #offset2{
+    margin: 10px;
+    padding: 5px;
+}
+.pie{
+    clear: both;
+    background: #2d3436;
+    color: white;
+}
