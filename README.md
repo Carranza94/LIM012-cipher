@@ -5,16 +5,18 @@
 
 ### IMAGEN FINAL DEL PROYECTO:
 
-* Trabajando en ello
+* ![](./producto-final.PNG)
 
 #### INVESTIGACIÓN UX:
   1. USUARIOS Y OBJETIVOS CON RELACIÓN AL PRODUCTO
     * Tras identificar que la mayoría de personas de diversos rangos de edad, clase social, géneros y ubicación geográfica tienen una angustia que a veces puede ser interpretado como miedo a que un ajeno descubra las contraseñas de sus aplicaciones y verse expuesto ante el qué dirán, "CONTRASEÑA SEGURA" está dirigida al público general que esté interesado en obtener una contraseña más aleatoria y dificil de descubrir, para así sentirse seguros de que nadie podrá ingresar a sus diversas cuentas de aplicaciones. 
   2. ¿CÓMO "CONTRASEÑA SEGURA" SOLUCIONA LOS PROBLEMAS/NECESIDADES DE DICHOS USUARIOS?
     * "CONTRASEÑA SEGURA " facilita a los usuarios a obtener una contraseña más difíciles de hackeara 
-  3. FOTO PRIMER PROTOTIPO PAPEL
+  3. FOTO PRIMER PROTOTIPO PAPEL 
+    ![](./PROTOTIPO-1.jpeg)
   4. Me recomendaron que la palabra 'INGRESE TEXTO A CODIFICAR AQUÍ' estaba un poco mal entendido, porque ese texto da a entender que solo se puede ingresar texto más no que puede mostrar el resultado. Por ello, decidí cambiarlo por 'Cifra aquí'.
-  5. Imagen del prototipo final
+  5. SEGUNDO PROTOTIPO
+  ![](./prototipo-2.PNG)
 
 
 ------------------------------------------------------*-*-----------------------------------------------------------------

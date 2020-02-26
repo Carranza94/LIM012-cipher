@@ -2,48 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1, maximum-scale=1>
     <title>CONTRASEÑA SEGURA</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Fredoka+One|Red+Hat+Display:700i&display=swap" rel="stylesheet">
   </head>
   <body>
-  
-    <!--Al header le puse como valor "cabecera" al atributo class para poder
-    identificarlo mejor cuando quiera modificar su estilo en el CSS-->
-    <header class="cabecera">
-      <h1>Contraseña Segura</h1>
-    </header>
-    <main class="cuerpo">
-      <!-- En el main estoy separando por div lo que será la parte del cifrado
-      con la parte del descifrado porque lo que pienso hacer es que una vez esté
-      en el CSS pueda hacer que ambos contendores se muestren uno al lado del otro
-      por ello les di un atributo id a cada uno para hacerlo único.-->
-      <div class="cifrado">
-        <h2>CIFRA AQUÍ</h2>
-      <!--Usé el input de tipo "text" para crear el espacio donde va a ingresar información
-      el usuario. Además le agregué el atributo "placeholder" para indicar qué es lo que hará en este cuadro-->
-        <input id= "string1" type="text" placeholder="Ingrese texto a cifrar">
-        <p>Número de desplazamiento</p>
-      <!--Usé el imput de tipo number para que el usuario pueda disminuir o aumentar (del 0 al 100) el offset-->
-        <input id= "offset1" type="number" name="position1">
-      <!--Agregué la etiqueta button la cual identifiqué dependiendo de la acción que harán-->
-        <button id="click1">CIFRAR</button>
-        
-      </div>
-      <div class="descifrado">
-        <h2>DESCIFRA AQUÍ</h2>
-        <input id= "string2" type="text" placeholder="Ingrese texto a descifrar">
-        <p>Número de desplazamiento</p>
-        <input id= "offset2" type="number" name="position2">
-        <button id="click2">DESCIFRAR</button>
-      </div>
-    </main>
-    <!--En el caso del footer le puse una clase para poder editarlo en el css llamandolo diréctamente por su nombre.-->
-    <footer class="pie">
-      <blockquote><em>"Las contraseñas son como la ropa interior: no dejes que otros las vean, 
-        cámbialas con frecuencia y no las compartas con desconocidos".</em> <strong>Chris Pirillo</strong></blockquote>
-    </footer>
-  
+    <!-- <div class="contenedor">-->
+      <header class="cabecera">
+        <h1 class="titulo">CONTRASEÑA SEGURA</h1>
+      </header>
+      <main class="principal">
+        <div class="bienvenida">
+          <p class="intro">¿Cansadx de generadores de contraseñas difícil de memorizar para ti? <br>¡Sigue estos 3 simples pasos para crear tu propia contraseña más segura que nunca!</p>
+        </div>
+        <div class="paso1">
+          <p id="indicacion1">Paso 1: Ingrese su texto</p>
+          <input id= "string1" type="text" placeholder="Ingrese texto aquí">
+        </div>
+        <div class="paso2">
+          <p id="indicacion2">Paso 2: Indique grado de seguridad</p>
+            <!--Usé el imput de tipo number para que el usuario pueda disminuir o aumentar el offset-->
+          <input id= "offset" type="number" name="position1" placeholder="Elija un número">
+        </div>
+        <div class="paso3">
+          <p id="indicacion3">Paso 3: Elija una opción</p>
+          <button id="click1">Generar Contraseña</button>
+          <button id="click2">Revelar Contraseña</button>
+        </div>
+        <div class="nuevotexto">
+          <p id="resultado">Resultado</p>
+          <input id= "string2" type="text" placeholder="Ver nuevo texto aquí">
+        </div>
+      </main>
+      <!--En el caso del footer le puse una clase para poder editarlo en el css llamandolo diréctamente por su nombre.-->
+      <footer class="pie">
+        <blockquote id="cita"><em>"Las contraseñas son como la ropa interior: no dejes que otros las vean, 
+        cámbialas con frecuencia y no las compartas con desconocidos".</em> Chris Pirillo</blockquote>
+      </footer>
+    <!-- </div>-->
     <script src="index.js" type="module"></script>
-
   </body>
 </html>

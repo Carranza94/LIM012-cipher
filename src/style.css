@@ -1,82 +1,128 @@
-/*Por recomendación de un youtuber, le puse 0 de margin y de padding para resetear los parámetros que 
-de por sí tiene el navegador. Así yo misma decidiré mis estilos más convenientes */
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-/*Empecé por poner un borde a mis etiquetas header, main y footer para saber cóm se ven y cómo se verán 
-conforme avance el estilo. También, le agregé a mi body un border y un tamaño para poder saber cómo está agrupando
-todos mis elementos*/
-body{
-    width: 1000px;
+
+body {
+    background: #FFFFFF;
+}
+/*
+.contenedor {
     border: 1px solid black;
-    margin: 15px;
-    padding: 2px;
+    background: #0a3d62;
+    width: 100%;
+    margin: 15px auto;
+}*/
+.cabecera {
+    background: rgb(183, 218, 231);
+    border: 1px solid #C0DFD9;
+    padding: 0.6em;
+    margin: 5px auto;
+    width: 70%;
     display: block;
 }
-header,footer{
-    border: 1px solid black;
-    margin: 10px;
-    padding: 5px;
-    display: block;
-}
-main{
-    border: 1px solid black;
-    margin: 10px;
-    padding: 5px;
-    display: inline-block;
-
-}
-
-header, footer, main{
+.titulo {
+    padding: 10px;
+    grid-column: 3/4;
+    font-family: 'fredoka One';
     text-align: center;
-    width: 960px;
+    color: #333333;
 }
-h1{
-    font-family: Verdana;
-    font-size: 50px;
-    background: #2d3436;
-    color: white;
-    margin: 15px;
-    padding: 5px;
+.principal {
+    background: #C0DFD9;
+    width: 70%;
+    margin: 5px auto;
+    padding: 0.6em;
 }
-.cifrado{
-    /*border: 0.5px solid blue;*/
-    background: #2d3436;
-    color: white;
-    width: 440px;
-    margin: 10px;
-    padding: 5px;
-    float: left;
+.bienvenida {
+    margin: auto;
+    padding: 1em;
+    width: 85%;
+    max-width: 1000px;
+    display: block
+}
+.intro {
+    font-family: 'Amaranth';
+    text-align: center;
+}
+.paso1 {
+    border: 1px solid gray;
+    margin: auto;
+    width: 70%;
+    display: block;
+    padding: 1em; 
 
 }
-.descifrado{
-    /* border: 0.5px solid blue;*/
-     background: #2d3436;
-     color: white;
-     width: 440px;
-     margin: 10px;
-     padding: 5px;
-     float: right;
- }
-
-
-#string1{
-    border-width: 1px solid gray;
-    margin: 8px;
-    padding: 5px;
+#indicacion1 {
+    font-family: 'Red Hat Display';
 }
-#string2{
-    border-width: 1px solid gray;
-    margin: 8px;
-    padding: 5px,
+#string1 {
+    font-size: 1.3em;
+    width: 100%;
+    color: #333333;
 }
-#offset1 , #offset2{
-    margin: 10px;
-    padding: 5px;
+.paso2 {
+    border: 1px solid gray;
+    margin: 10px auto;
+    padding: 1em;
+    width: 70%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 10% 15% 15% 20% 15% 15% 10%;
+    gap: 0.2em;
 }
-.pie{
-    clear: both;
-    background: #2d3436;
-    color: white;
+#indicacion2 {
+    font-family: 'Red Hat Display';
+    grid-column: 1/5;
+}
+#offset {
+    grid-column: 5/7;
+    font-size: 1em;
+}
+.paso3 {
+    border: 1px solid gray;
+    margin: auto;
+    padding: 1em;
+    width: 70%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 10% 10% 21.5% 7% 21.5% 5% 20%;
+    gap: 0.2em;
+}
+#indicacion3 {
+    font-family: 'Red Hat Display';
+    grid-column: 1/4;
+}
+#click1 {
+    grid-column: 5/6;
+}
+#click2 {
+    grid-column: 7/8;
+}
+.nuevotexto {
+    border: 1px solid gray;
+    margin: 10px auto;
+    padding: 1em;
+    width: 70%;
+    display: block;
+    padding: 1em;
+}
+#resultado {
+    font-family: 'Red Hat Display';
+}
+#string2 {
+    font-size: 1.3em;
+    width: 100%;
+    color: #333333;
+}
+.pie {
+    border: 1px solid gray;
+    background: rgb(94, 91, 80);
+    margin: 5px auto;
+    width: 70%;
+    padding: 0.6em;
+    }
+#cita {
+    font-family: 'Amaranth';
+    color: #FFFFFF;
 }

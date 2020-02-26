@@ -1,5 +1,6 @@
 // Importamos el objeto `cipher`, que contiene los métodos `encode` y `decode`
 import cipher from '../src/cipher';
+
 describe('cipher', () => {
   it('cipher debería ser un objeto', () => {
     expect(typeof cipher).toBe('object');
@@ -21,7 +22,7 @@ describe('cipher', () => {
     // Si decides agregar soporte para minúsculas descomenta el test a
     // continuación.
     it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offset 33', () => {
-      expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg')
+      expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg');
     });
     // Hacker edition
     // Si decides implementar soporte para caracteres no alfabéticos descomenta
@@ -29,17 +30,17 @@ describe('cipher', () => {
     it('debería retornar " !@" para " !@"', () => {
       expect(cipher.encode(33, ' !@')).toBe(' !@');
     });
-    //Negativo Mayúsculas
+    // Negativo Mayúsculas
     it('debería retornar "TUVWXYZABCDEFGHIJKLMNOPQRS" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset -33', () => {
-      expect(cipher.encode(-33,'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('TUVWXYZABCDEFGHIJKLMNOPQRS');
+      expect(cipher.encode(-33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('TUVWXYZABCDEFGHIJKLMNOPQRS');
     });
-    //Negativos Minúscula
+    // Negativos Minúscula
     it('debería retornar "tuvwxyzabcdefghijklmnopqrs" para "abcdefghijklmnopqrstuvwxyz" con offset -33', () => {
-      expect(cipher.encode(-33,'abcdefghijklmnopqrstuvwxyz')).toBe('tuvwxyzabcdefghijklmnopqrs');
+      expect(cipher.encode(-33, 'abcdefghijklmnopqrstuvwxyz')).toBe('tuvwxyzabcdefghijklmnopqrs');
     });
-    //Negativos para caracteres no alfabéticos
+    // Negativos para caracteres no alfabéticos
     it('debería retornar " !@" para " !@"', () => {
-      expect(cipher.encode(-33,' !@')).toBe(' !@');
+      expect(cipher.encode(-33, ' !@')).toBe(' !@');
     });
   });
 });
@@ -57,27 +58,26 @@ describe('cipher.decode', () => {
     expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
   });
   // Hacker edition
-
   // Si decides agregar soporte para minúsculas descomenta el test a continuación.
   it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
     expect(cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg')).toBe('abcdefghijklmnopqrstuvwxyz');
   });
-  // Hacker edition
-  // Si decides implementar soporte para caracteres no alfabéticos descomenta el test a continuación.
+  /* Hacker edition
+ Si decides implementar soporte para caracteres no alfabéticos descomenta el test a continuación. */
   it('debería retornar " !@" para " !@"', () => {
     expect(cipher.decode(33, ' !@')).toBe(' !@');
   });
-  //Negativo Mayúsculas
+  // Negativo Mayúsculas
   it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "TUVWXYZABCDEFGHIJKLMNOPQRS" con offset -33', () => {
-    expect(cipher.decode(-33,'TUVWXYZABCDEFGHIJKLMNOPQRS')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    expect(cipher.decode(-33, 'TUVWXYZABCDEFGHIJKLMNOPQRS')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
   });
   // Negativo Minúsculas
   it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "tuvwxyzabcdefghijklmnopqrs" con offset -33', () => {
-    expect(cipher.decode(-33,'tuvwxyzabcdefghijklmnopqrs')).toBe('abcdefghijklmnopqrstuvwxyz');
+    expect(cipher.decode(-33, 'tuvwxyzabcdefghijklmnopqrs')).toBe('abcdefghijklmnopqrstuvwxyz');
   });
 
-  //Negativos para caracteres no alfabéticos
+  // Negativos para caracteres no alfabéticos
   it('debería retornar " !@" para " !@"', () => {
-    expect(cipher.decode(-33,' !@')).toBe(' !@');
+    expect(cipher.decode(-33, ' !@')).toBe(' !@');
   });
 });

@@ -4,20 +4,33 @@ let string1 = document.getElementById('string1');
 let string2 = document.getElementById('string2');
 let click1 = document.getElementById('click1');
 let click2 = document.getElementById('click2');
-let offSet1 = document.getElementById('offset1');
-let offSet2 = document.getElementById('offset2');
-click1.addEventListener('click',() => {
-  let palabra1 = string1.value;
-  //console.log(palabra1);
-  let offSetC = offSet1.value;
-  string2.value = cipher.encode(offSetC,palabra1);
-});  
-click2.addEventListener('click',() =>
+let offSet = document.getElementById('offset');
+//let copiar = document.getElementById('copiar')
+//let refrescar = document.getElementById('refrescar')
+click1.addEventListener('click', () => 
 {
-  let palabra2 = string2.value;
-  let offSetD = offSet2.value;
-  string1.value = cipher.decode(offSetD,palabra2);
+  let texto = string1.value;
+  let desplazamiento = offSet.value;
+  string2.value = cipher.encode(desplazamiento,texto);
+});  
+click2.addEventListener('click', () =>
+{
+  let texto = string1.value;
+  let desplazamiento = offSet.value;
+  string2.value = cipher.decode(desplazamiento,texto);
 }); 
+/*
+copiar.addEventListener('click', () => 
+{
+
+});
+refrescar.addEventListener('click', () =>
+{
+
+
+});
+*/
+
 /*else if(positionAsciiEncode === 33){
       resultado += '!';
       string2.value = resultado;
