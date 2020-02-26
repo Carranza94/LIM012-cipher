@@ -14,9 +14,9 @@
     * "CONTRASEÑA SEGURA " facilita a los usuarios a obtener una contraseña más difíciles de hackeara 
   3. FOTO PRIMER PROTOTIPO PAPEL 
     ![](./PROTOTIPO-1.jpeg)
-  4. Me recomendaron que la palabra 'INGRESE TEXTO A CODIFICAR AQUÍ' estaba un poco mal entendido, porque ese texto da a entender que solo se puede ingresar texto más no que puede mostrar el resultado. Por ello, decidí cambiarlo por 'Cifra aquí'.
+  4. Me recomendaron que la palabra 'INGRESE TEXTO A CODIFICAR AQUÍ' estaba un poco mal entendido, porque ese texto da a entender que solo se puede ingresar texto más no que puede mostrar el resultado. Por ello, decidí cambiarlo por 'Cifra aquí'. Sin embargo, mi prototipo no era comprendido por diferentes usuarios, era necesario explicarles qué función tenía cuadro o botón y se complicaban. Tras las recomendaciones recogidas consulté la posibilidad de que solo exita un cuadro en donde ingresen el texto que deseen, un offset y dos botones que digan cuál es la función que quieren realizar. Además, decidí agregar al diseño la secuencia de lo que realiza este producto paso a paso, hasta llegar al resultado final.
   5. SEGUNDO PROTOTIPO
-  ![](./prototipo-2.PNG)
+    ![](./prototipo-2.PNG)
 
 
 ------------------------------------------------------*-*-----------------------------------------------------------------
@@ -32,14 +32,14 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 ### UX
 
 * [ ] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
-*  ] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
+* [*] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
 * [ ] [Aplicar los principios de diseño visual](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/01-visual-design/01-visual-design-basics)
 
 ### HTML y CSS
 
 * [ ] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
 * [ ] [Uso de selectores de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
-* [ ] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
+* [*] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
 
 ### DOM
 
@@ -49,7 +49,7 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 
 ### Javascript
 
-* [ ] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
+* [*] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
 * [ ] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
 * [ ] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
 * [ ] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
@@ -58,11 +58,11 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 
 ### Testing
 
-* [ ] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
+* [] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Git y GitHub
 
-* [ ] [Comandos de git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/04-commands)
+* [*] [Comandos de git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/04-commands)
   (`add` | `commit` | `pull` | `status` | `push`).
 * [ ] [Manejo de repositorios de GitHub](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/02-github/01-github)  (`clone` | `fork` | `gh-pages`).
 
