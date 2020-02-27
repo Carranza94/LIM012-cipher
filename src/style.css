@@ -8,34 +8,34 @@ body {
 }
 .cabecera {
     background: #3B536B;
-    border: 1px solid #C0DFD9;
+    border: 0.2em solid #C0DFD9;
     padding: 0.6em;
-    margin: 5px auto;
-    width: 70%;
+    margin: 0.3em auto;
+    width: 80%;
     display: block;
 }
 .titulo {
     padding: 0.6em;
-    grid-column: 3/4;
     font-family: 'fredoka One';
     text-align: center;
     color: #FFFFFF;
 }
 .principal {
     background: #E9ECE5;
-    width: 70%;
-    margin: 5px auto;
+    width: 80%;
+    margin: 0.3em auto;
     padding: 0.6em;
 }
 .bienvenida {
     margin: auto;
     padding: 1em;
-    width: 85%;
+    width: 100%;
     display: block
 }
 .intro {
     font-family: 'Amaranth';
     text-align: center;
+    font-size: 1.2em;
 }
 .paso1 {
     border: 0.2em dotted #3B536B;
@@ -49,13 +49,13 @@ body {
 #indicacion1 {
     font-family: 'Red Hat Display';
     margin-bottom: 0.3em;
-
 }
 #string1 {
     font-size: 1.3em;
     font-family: 'Amaranth';
     width: 100%;
     color: #333333;
+    border: 0.1em #6F8075;
 }
 .paso2 {
     border: 0.2em dotted #3B536B;
@@ -121,10 +121,10 @@ body {
     color: #333333;
 }
 .pie {
-    border: 1px solid gray;
+    border: 0.2em solid gray;
     background: #3B536B;
-    margin: 5px auto;
-    width: 70%;
+    margin: 0.3em auto;
+    width: 80%;
     padding: 0.6em;
     }
 #cita {
